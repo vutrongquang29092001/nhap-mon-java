@@ -11,6 +11,11 @@ package baitapchuong3;
  */
 public class Account {
 
+    public Account(String UserName, float Money) {
+        this.UserName = UserName;
+        this.Money = Money;
+    }
+
     private String UserName;
     private float Money;
 

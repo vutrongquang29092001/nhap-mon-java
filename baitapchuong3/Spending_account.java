@@ -14,9 +14,11 @@ public class Spending_account extends Account {
    private float fee ;
    private int cFre = 0;
 
-    public Spending_account() {
-        
+    public Spending_account(String UserName, float Money) {
+        super(UserName, Money);
     }
+
+   
     
      public float cash_withdrawal(float Money ) {
           super.cash_withdrawal(Money);
@@ -35,13 +37,19 @@ public class Spending_account extends Account {
     }
      public boolean reset_count(){
          
-         this.count = 4;
-        if(this.count ==0){
+         
+        if(this.count >= 4){
+            this.cFre=0;
+            this.count = 4;
+            this.setMoney(this.getMoney() - 2*this.cFre);
+             this.cFre=0;
+
             return true;
         }else{
+            
             return false;
         }
-                
+            
      }
 
     

@@ -14,9 +14,13 @@ import static java.lang.Math.pow;
 public class Saving_account extends Account {
    private float interest;
 
-    public Saving_account() {
+    public Saving_account(String UserName, float Money) {
+        super(UserName, Money);
     }
 
+   
+
+   
     public float getInterest() {
         return interest;
     }
