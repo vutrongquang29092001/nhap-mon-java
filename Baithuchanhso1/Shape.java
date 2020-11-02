@@ -9,6 +9,12 @@ package Baithuchanhso1;
  *
  * @author vutro
  */
-public class Shape {
+public abstract class Shape {
+ 
+    public Shape() {
+    }
+    
+    public abstract float area();
+    public abstract float circumference();
     
 }
